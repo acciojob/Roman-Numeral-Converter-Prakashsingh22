@@ -11,12 +11,13 @@ function convertToRoman(num) {
 
   //your code here
 	let ans = "";
-	for(let[symbol,value] of obj){
+	for(let[symbol,value] of Object.values(obj)){
 		while(num>=value){
 			ans+=symbol;
 			num-=value;
 		}
-	}return ans;
+	}
+	return ans;
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
