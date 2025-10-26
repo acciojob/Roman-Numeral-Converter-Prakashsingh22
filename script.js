@@ -1,4 +1,7 @@
 function convertToRoman(num) {
+	if (num <= 0 || num > 100000) {
+    return "Invalid Input"; 
+    }
   	const obj = {
       0:['M',1000], 
       1:['D', 500], 
